@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'scorecard',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://intense-inferno-396.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
